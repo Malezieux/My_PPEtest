@@ -39,11 +39,8 @@ class __TwigTemplate_a186e43948bbf074d138b5285ba6c740 extends Template
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f->enter($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "template", "identification/index.html.twig"));
 
-        // line 2
-        echo "{}
-<!DOCTYPE html>
-
-<html>
+        // line 1
+        echo "<html>
 <head>
     <link href=\"https://fonts.googleapis.com/css?family=Oxygen&display=swap\" rel=\"stylesheet\">
     <link href=\"https://fonts.googleapis.com/css?family=Inter&display=swap\" rel=\"stylesheet\">
@@ -55,38 +52,27 @@ class __TwigTemplate_a186e43948bbf074d138b5285ba6c740 extends Template
 
 </head>
 
-<body>
-    <div class=e1_2>
-        <div class=e23_69>
-        <div class=\"e5_3\"></div><span  class=\"e5_10\">Bienvenue sur le trombinoscope GEFOR</span>
-        <div class=e8_39>
-        <div class=e5_14>
-        <div class=\"e5_11\"></div><span  class=\"e5_13\">Photos</span>
-        </div>
-        <div class=e5_15>
-        <div class=\"e5_16\"></div><span  class=\"e5_17\">Photos</span>
-        </div>
-        </div>
-        </div>
-        <div class=e8_70>
-        <div class=\"e8_46\"></div><span  class=\"e8_37\">A propos</span><span  class=\"e8_61\">Conditions d’utilisation</span><span  class=\"e8_64\">Contact / Assistance</span><span  class=\"e8_68\">Confidentialité et sécurité</span><span  class=\"e8_69\">Accessibilité</span>
-        </div>
-        <div class=\"e46_53\"></div>
-        <div class=e23_68>
-        <div class=e8_40>
-        <div class=\"e8_41\"></div><span  class=\"e8_42\">mot de passe</span>
-        <div class=\"e8_43\"></div><span  class=\"e8_44\">identifiant</span>
-        <div class=\"e8_45\"></div>
-        </div>
-        <div class=e8_56>
-        <div class=\"e8_57\"></div><span  class=\"e8_58\">connexion</span>
-        </div>
-        <div class=e46_54>
-        <div class=\"e46_55\"></div>
-        </div>
-        </div>
-        </div>
-</body>
+    <body>
+        ";
+        // line 14
+        echo         $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->renderBlock((isset($context["form"]) || array_key_exists("form", $context) ? $context["form"] : (function () { throw new RuntimeError('Variable "form" does not exist.', 14, $this->source); })()), 'form_start');
+        echo "
+        ";
+        // line 15
+        echo $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->searchAndRenderBlock(twig_get_attribute($this->env, $this->source, (isset($context["form"]) || array_key_exists("form", $context) ? $context["form"] : (function () { throw new RuntimeError('Variable "form" does not exist.', 15, $this->source); })()), "login", [], "any", false, false, false, 15), 'row');
+        echo "
+        ";
+        // line 16
+        echo $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->searchAndRenderBlock(twig_get_attribute($this->env, $this->source, (isset($context["form"]) || array_key_exists("form", $context) ? $context["form"] : (function () { throw new RuntimeError('Variable "form" does not exist.', 16, $this->source); })()), "password", [], "any", false, false, false, 16), 'row');
+        echo "
+        <button type=\"submit\" class=\"btn btn-primary\">Envoyer</button>
+        ";
+        // line 18
+        echo         $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->renderBlock((isset($context["form"]) || array_key_exists("form", $context) ? $context["form"] : (function () { throw new RuntimeError('Variable "form" does not exist.', 18, $this->source); })()), 'form_end');
+        echo "
+        
+    </body>
+
 
 </html>
 ";
@@ -103,18 +89,19 @@ class __TwigTemplate_a186e43948bbf074d138b5285ba6c740 extends Template
         return "identification/index.html.twig";
     }
 
+    public function isTraitable()
+    {
+        return false;
+    }
+
     public function getDebugInfo()
     {
-        return array (  43 => 2,);
+        return array (  71 => 18,  66 => 16,  62 => 15,  58 => 14,  43 => 1,);
     }
 
     public function getSourceContext()
     {
-        return new Source("{# templates/identification/index.html.twig #}
-{}
-<!DOCTYPE html>
-
-<html>
+        return new Source("<html>
 <head>
     <link href=\"https://fonts.googleapis.com/css?family=Oxygen&display=swap\" rel=\"stylesheet\">
     <link href=\"https://fonts.googleapis.com/css?family=Inter&display=swap\" rel=\"stylesheet\">
@@ -126,38 +113,15 @@ class __TwigTemplate_a186e43948bbf074d138b5285ba6c740 extends Template
 
 </head>
 
-<body>
-    <div class=e1_2>
-        <div class=e23_69>
-        <div class=\"e5_3\"></div><span  class=\"e5_10\">Bienvenue sur le trombinoscope GEFOR</span>
-        <div class=e8_39>
-        <div class=e5_14>
-        <div class=\"e5_11\"></div><span  class=\"e5_13\">Photos</span>
-        </div>
-        <div class=e5_15>
-        <div class=\"e5_16\"></div><span  class=\"e5_17\">Photos</span>
-        </div>
-        </div>
-        </div>
-        <div class=e8_70>
-        <div class=\"e8_46\"></div><span  class=\"e8_37\">A propos</span><span  class=\"e8_61\">Conditions d’utilisation</span><span  class=\"e8_64\">Contact / Assistance</span><span  class=\"e8_68\">Confidentialité et sécurité</span><span  class=\"e8_69\">Accessibilité</span>
-        </div>
-        <div class=\"e46_53\"></div>
-        <div class=e23_68>
-        <div class=e8_40>
-        <div class=\"e8_41\"></div><span  class=\"e8_42\">mot de passe</span>
-        <div class=\"e8_43\"></div><span  class=\"e8_44\">identifiant</span>
-        <div class=\"e8_45\"></div>
-        </div>
-        <div class=e8_56>
-        <div class=\"e8_57\"></div><span  class=\"e8_58\">connexion</span>
-        </div>
-        <div class=e46_54>
-        <div class=\"e46_55\"></div>
-        </div>
-        </div>
-        </div>
-</body>
+    <body>
+        {{ form_start(form) }}
+        {{ form_row(form.login) }}
+        {{ form_row(form.password) }}
+        <button type=\"submit\" class=\"btn btn-primary\">Envoyer</button>
+        {{ form_end(form) }}
+        
+    </body>
+
 
 </html>
 ", "identification/index.html.twig", "C:\\wamp\\www\\my_PPEtest\\templates\\identification\\index.html.twig");

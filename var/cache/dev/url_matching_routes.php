@@ -15,9 +15,10 @@ return [
         '/_profiler/xdebug' => [[['_route' => '_profiler_xdebug', '_controller' => 'web_profiler.controller.profiler::xdebugAction'], null, null, null, false, false, null]],
         '/_profiler/open' => [[['_route' => '_profiler_open_file', '_controller' => 'web_profiler.controller.profiler::openAction'], null, null, null, false, false, null]],
         '/contact' => [[['_route' => 'app_contact_contact', '_controller' => 'App\\Controller\\ContactController::contact'], null, null, null, false, false, null]],
-        '/account/identification' => [[['_route' => 'app_identification', '_controller' => 'App\\Controller\\IdentificationController::index'], null, null, null, false, false, null]],
-        '/account' => [[['_route' => 'acceuil', '_controller' => 'App\\Controller\\IdentificationController::acceuil'], null, null, null, true, false, null]],
-        '/post' => [[['_route' => 'app_post_post', '_controller' => 'App\\Controller\\PostController::post'], null, null, null, false, false, null]],
+        '/bdd' => [[['_route' => 'create_bdd', '_controller' => 'App\\Controller\\EnvoiBDDController::index'], null, null, null, false, false, null]],
+        '/identification' => [[['_route' => 'app_identification', '_controller' => 'App\\Controller\\IdentificationController::new'], null, null, null, false, false, null]],
+        '/new' => [[['_route' => 'New ticket', '_controller' => 'App\\Controller\\PostController::new'], null, null, null, false, false, null]],
+        '/posts' => [[['_route' => 'show_posts', '_controller' => 'App\\Controller\\PostController::showPosts'], null, null, null, false, false, null]],
     ],
     [ // $regexpList
         0 => '{^(?'

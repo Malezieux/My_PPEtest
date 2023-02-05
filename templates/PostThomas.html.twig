@@ -1,0 +1,12 @@
+{# templates/new.html.twig #}
+<html>
+    <head></head>
+    <body>
+        {{ form_start(form) }}
+        {{ form_row(form.subject) }}
+        {{ form_row(form.text) }}
+        <button type="submit" class="btn btn-primary">Créer</button>
+        {{ form_end(form) }}
+        
+    </body>
+</html>

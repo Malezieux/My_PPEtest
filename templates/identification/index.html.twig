@@ -1,7 +1,3 @@
-{# templates/identification/index.html.twig #}
-{}
-<!DOCTYPE html>
-
 <html>
 <head>
     <link href="https://fonts.googleapis.com/css?family=Oxygen&display=swap" rel="stylesheet">
@@ -14,37 +10,14 @@
 
 </head>
 
-<body>
-    <div class=e1_2>
-        <div class=e23_69>
-        <div class="e5_3"></div><span  class="e5_10">Bienvenue sur le trombinoscope GEFOR</span>
-        <div class=e8_39>
-        <div class=e5_14>
-        <div class="e5_11"></div><span  class="e5_13">Photos</span>
-        </div>
-        <div class=e5_15>
-        <div class="e5_16"></div><span  class="e5_17">Photos</span>
-        </div>
-        </div>
-        </div>
-        <div class=e8_70>
-        <div class="e8_46"></div><span  class="e8_37">A propos</span><span  class="e8_61">Conditions d’utilisation</span><span  class="e8_64">Contact / Assistance</span><span  class="e8_68">Confidentialité et sécurité</span><span  class="e8_69">Accessibilité</span>
-        </div>
-        <div class="e46_53"></div>
-        <div class=e23_68>
-        <div class=e8_40>
-        <div class="e8_41"></div><span  class="e8_42">mot de passe</span>
-        <div class="e8_43"></div><span  class="e8_44">identifiant</span>
-        <div class="e8_45"></div>
-        </div>
-        <div class=e8_56>
-        <div class="e8_57"></div><span  class="e8_58">connexion</span>
-        </div>
-        <div class=e46_54>
-        <div class="e46_55"></div>
-        </div>
-        </div>
-        </div>
-</body>
+    <body>
+        {{ form_start(form) }}
+        {{ form_row(form.login) }}
+        {{ form_row(form.password) }}
+        <button type="submit" class="btn btn-primary">Envoyer</button>
+        {{ form_end(form) }}
+        
+    </body>
+
 
 </html>

@@ -1,0 +1,30 @@
+{# templates/posts.html.twig #}
+<html>
+    <head></head>
+    <body>
+        <table>
+        {% for post in posts %}
+            <tr>
+                <td>{{post.id}}</td>
+                <td>{{post.subject}}</td>
+                <td>{{post.createdDate}}</td>
+                <td>{{post.text}}</td>
+                <td><a href="/post/{{post.id}}">Voir</a></td>
+                <td><a href="/edit/{{post.id}}">Modifier</a></td>
+                <td><a href="/delete/{{post.id}}">Supprimer</a></td>
+            </tr>
+        {% endfor %}
+        </table>
+    </body>
+</html>
+Réduire
+
+
+
+
+
+
+
+
+
+

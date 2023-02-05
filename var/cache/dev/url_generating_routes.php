@@ -17,8 +17,9 @@ return [
     '_profiler_exception' => [['token'], ['_controller' => 'web_profiler.controller.exception_panel::body'], [], [['text', '/exception'], ['variable', '/', '[^/]++', 'token', true], ['text', '/_profiler']], [], [], []],
     '_profiler_exception_css' => [['token'], ['_controller' => 'web_profiler.controller.exception_panel::stylesheet'], [], [['text', '/exception.css'], ['variable', '/', '[^/]++', 'token', true], ['text', '/_profiler']], [], [], []],
     'app_contact_contact' => [[], ['_controller' => 'App\\Controller\\ContactController::contact'], [], [['text', '/contact']], [], [], []],
+    'create_bdd' => [[], ['_controller' => 'App\\Controller\\EnvoiBDDController::index'], [], [['text', '/bdd']], [], [], []],
     'hello' => [['name'], ['_controller' => 'App\\Controller\\HelloController::hello'], [], [['variable', '/', '[^/]++', 'name', true], ['text', '/hello']], [], [], []],
-    'app_identification' => [[], ['_controller' => 'App\\Controller\\IdentificationController::index'], [], [['text', '/account/identification']], [], [], []],
-    'acceuil' => [[], ['_controller' => 'App\\Controller\\IdentificationController::acceuil'], [], [['text', '/account/']], [], [], []],
-    'app_post_post' => [[], ['_controller' => 'App\\Controller\\PostController::post'], [], [['text', '/post']], [], [], []],
+    'app_identification' => [[], ['_controller' => 'App\\Controller\\IdentificationController::new'], [], [['text', '/identification']], [], [], []],
+    'New ticket' => [[], ['_controller' => 'App\\Controller\\PostController::new'], [], [['text', '/new']], [], [], []],
+    'show_posts' => [[], ['_controller' => 'App\\Controller\\PostController::showPosts'], [], [['text', '/posts']], [], [], []],
 ];

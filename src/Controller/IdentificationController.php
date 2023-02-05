@@ -3,44 +3,39 @@
 namespace App\Controller;
 
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
-use Symfony\Component\HttpFoundation\Response;
+use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\Routing\Annotation\Route;
+use Doctrine\Persistence\ManagerRegistry;
+
 use App\Form\IdentificationType;
-use App\Entity\Identification;
+use App\Entity\Ident;
+
+
+
+
+
+
 
 class IdentificationController extends AbstractController
 {
     #[Route('/identification', name: 'app_identification')]
-    public function index(): Response
+       public function new(ManagerRegistry $doctrine, Request $request)
     {
-        return $this->render('identification/index.html.twig', [
-            'controller_name' => 'IdentificationController',
-        ]);
-    }
-    public function identification(Request $request)
-    {
-        $post = new Post();
-        $form = $this->createForm(IdentificationType::class, $identification);
+        $post = new Ident();
+        $form = $this->createForm(IdentificationType::class, $post);
         $form->handleRequest($request);
         if ($form->isSubmitted() && $form->isValid()) {
-            dump($post);
+
+            $em = $doctrine->getManager();
+            $em->persist($post);
+            $em->flush();
         }
-        else{
-            echo('mauvais pas bon');
-        }
-        
-        return $this->render('identification/identification.html.twig', array(
+        return $this->render('identification/index.html.twig', array(
             'form' => $form->createView(),
         ));
-    }
-
-    #[Route('/', name: 'acceuil')]
-    public function acceuil(): Response
-    {
-        return $this->render('identification/index.html.twig', [
-            'controller_name' => 'IdentificationController',
-        ]);
-    }
     
+        
+    }
 
+   
 }
